@@ -27,15 +27,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const user = await User.find({ email }).select("+password");
 
         if (!user || user.length === 0) {
-          throw new Error("Invalid email or password");
+          throw new CredentialsSignin("Invalid email or password");
         }
 
         if (!user[0].password) {
-          throw new Error("Invalid email or password");
+          throw new CredentialsSignin("Invalid email or password");
         }
         const isMatched = await bcrypt.compare(password, user[0].password);
         if (!isMatched) {
-          throw new Error("Invalid email or password");
+          throw new CredentialsSignin("Invalid email or password");
         }
         const userData = {
           name: user[0].name,
@@ -49,7 +49,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ],
   pages: {
     signIn: "/signin",
-    // error: "/signin?error=true"
+    error : "/signin"
   },
   callbacks: {
     async session({ session, token }) {

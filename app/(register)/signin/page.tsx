@@ -32,12 +32,18 @@ const SignIn = () => {
     const password = formData.get("password") as string;
 
     try {
-      await signIn("credentials", {
+      const res = await signIn("credentials", {
         redirect: false,
         callbackUrl: "/",
         email,
         password,
       });
+      if (res.error) {
+        if (res.error === "CredentialsSignin")
+          alert("Invalid Email or Password");
+        else alert("Unable to Signin");
+        return;
+      }
     } catch (error) {
       console.error("Error signing in:", error);
       return;
