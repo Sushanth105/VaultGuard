@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VaultGuard: Secure Password Manager",
   description: "VaultGuard is a secure password manager that helps you store and manage your passwords safely.",
+  icons : {
+    icon : '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
