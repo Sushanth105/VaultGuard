@@ -90,10 +90,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a pull request
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 Made with ❤️ by [Sushanth105](https://github.com/Sushanth105)
