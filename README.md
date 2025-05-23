@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VaultGuard
+
+![VaultGuard Banner](https://vault-guard-lac.vercel.app/favicon.ico)
+
+**VaultGuard** is a secure, modern password manager web application built with [Next.js](https://nextjs.org/). It helps you generate, store, and manage your credentials safely, with a focus on simplicity and usability.  
+Live Demo: [https://vault-guard-lac.vercel.app/](https://vault-guard-lac.vercel.app/)
+
+## Features
+
+- 🔒 **Secure Password Storage:** All passwords are securely stored using encryption.
+- ✨ **Modern UI:** Intuitive and responsive user interface designed with modern web standards.
+- 🧩 **Next.js Powered:** Fast, SEO-friendly, and server-side rendered for enhanced performance.
+- 🛠️ **Password Generator:** Quickly generate strong, unique passwords.
+- 🔍 **Search & Organize:** Easily search, categorize, and manage stored credentials.
+- ☁️ **Hosted on Vercel:** Fast, reliable, and always online.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or above)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Sushanth105/VaultGuard.git
+   cd VaultGuard
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Setup Environment Variables:**
+
+   Create a `.env.local` file in the root directory and add the necessary environment variables (see `.env.example` if available).
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   Your app should now be running at [http://localhost:3000](http://localhost:3000).
+
+### Building for Production
+
+To create an optimized production build:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or deploy directly to [Vercel](https://vercel.com/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+VaultGuard is seamlessly deployed and hosted on Vercel.  
+You can check out the live version here: [https://vault-guard-lac.vercel.app/](https://vault-guard-lac.vercel.app/)
 
-## Learn More
+To deploy your own copy:
 
-To learn more about Next.js, take a look at the following resources:
+1. Push your code to GitHub.
+2. Import the project into [Vercel](https://vercel.com/).
+3. Set up environment variables in Vercel dashboard.
+4. Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Vercel](https://vercel.com/) (Hosting)
+- [Tailwind CSS](https://tailwindcss.com/) (or your chosen CSS framework)
+- [TypeScript](https://www.typescriptlang.org/) *(if used)*
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue or submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ by [Sushanth105](https://github.com/Sushanth105)
