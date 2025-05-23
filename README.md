@@ -80,16 +80,6 @@ To deploy your own copy:
 - [Tailwind CSS](https://tailwindcss.com/) (or your chosen CSS framework)
 - [TypeScript](https://www.typescriptlang.org/) *(if used)*
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a pull request
-
 ---
 
 Made with ❤️ by [Sushanth105](https://github.com/Sushanth105)
